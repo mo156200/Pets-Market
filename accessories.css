@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* خلفية فاتحة */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(90deg, #1f7aca, #1a8be7); /* تدرج ألوان */
+    color: white;
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+
+/* Accessories Container */
+.accessories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 20px;
+}
+
+/* Card Styling */
+.accessory-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.accessory-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.accessory-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.accessory-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.accessory-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0 20px;
+}
+
+.accessory-card .price {
+    font-size: 1.2rem;
+    color: #2575fc;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.accessory-card button {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.accessory-card button:hover {
+    background: linear-gradient(90deg, #4a00e0, #8e2de2);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .accessories-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accessory-card {
+        width: 90%; /* تناسب العرض مع الشاشات الصغيرة */
+    }
+}
+/* تعديل شكل الأزرار */
+.accessory-card button {
+    background-color: #ff5722; /* تغيير اللون الأساسي */
+    color: white;
+    border: 2px solid #ff5722; /* إضافة حد للزر بنفس اللون */
+    padding: 12px 30px;
+    border-radius: 50px; /* شكل الزر دائري */
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease; /* تأثير عند التمرير */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+
+/* تأثير عند التمرير فوق الزر */
+.accessory-card button:hover {
+    background-color: #43aaff; /* تغيير اللون عند التمرير */
+    border-color: #474afd; /* تغيير لون الحد عند التمرير */
+    transform: translateY(-3px); /* حركة بسيطة للأعلى */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التمرير */
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    margin: 0 15px;
+    background: linear-gradient(90deg, #5d22ff, #4366ff); /* تدرج لوني للخلفية */
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a:hover {
+    background: linear-gradient(90deg, #3a2db4, #1e33a5); /* تدرج لوني مقلوب عند التمرير */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,96 @@
+/* Set background image */
+body.signup-page {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* جعل صندوق إنشاء الحساب مائلاً إلى اليسار */
+.signup-container {
+    display: flex;
+    justify-content: flex-start; /* تحريك الصندوق إلى اليسار */
+    align-items: center;
+    width: 100%;
+    max-width: 100%; /* التأكد أن الحاوية تمتد بعرض الصفحة */
+    padding-left: 20px; /* إضافة مسافة من الحافة اليسرى */
+}
+
+/* ضمان محاذاة محتويات الحقول داخل الصندوق */
+.input-group {
+    text-align: left;
+    width: 100%; /* التأكد من أن الحقول تأخذ عرض الصندوق */
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2d3436;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.signup-box {
+    background: rgba(255, 255, 255, 0.8); /* خلفية شبه شفافة */
+    padding: 40px 30px;
+    border-radius: 12px; /* زوايا دائرية */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    backdrop-filter: blur(10px); /* تأثير ضبابي خلف الصندوق */
+}
+
+.btn-signup {
+    width: 100%;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* تدرج ألوان جذاب */
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px; /* زر دائري */
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 126, 95, 0.4); /* ظل زاهٍ */
+}
+
+.btn-signup:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* عكس التدرج عند التمرير */
+    transform: translateY(-3px); /* تأثير الحركة للأعلى */
+    box-shadow: 0 8px 20px rgba(255, 126, 95, 0.6); /* ظل أقوى */
+}
+
+.signup-box h2, .signup-box p {
+    color: #000; /* تحديد اللون الأسود للنص */
+}
+
+.login-link {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #ff7e5f;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
